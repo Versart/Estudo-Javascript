@@ -14,5 +14,3 @@ function diminuir() {
     }
 
 }
-
-let aux = document.getElementById('valor')
