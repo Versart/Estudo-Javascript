@@ -1,5 +1,7 @@
 function compararNumeros(num1, num2) {
-  if (num1 == null && num2 == null) {
+  let tipo1 = typeof 1
+  let tipo2 = typeof 1
+  if (typeof num1 != tipo1 || typeof num2 != tipo2) {
     return `Envie números!`
   }
   let igualdade = iguais(num1, num2)
@@ -32,4 +34,4 @@ function somar(num1, num2) {
   return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20`
 }
 
-console.log(compararNumeros(1, 0))
+console.log(compararNumeros(1))
