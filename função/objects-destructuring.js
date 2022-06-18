@@ -1,14 +1,19 @@
 let funcionario = {
-    id: 1,
-    nome: 'João'
+  id: 1,
+  nomeCompleto: {
+    primeiroNome: 'Wesley',
+    sobreNome: 'Versart'
+  }
 }
 
 function getId({ id }) {
-    return id
+  return id
 }
 
-function getNome({ nome }) {
-    return nome;
+function getNome({
+  nomeCompleto: { primeiroNome: primeiroNome, sobreNome: sobreNome }
+}) {
+  return `${primeiroNome} ${sobreNome}`
 }
 
 console.log(getId(funcionario))
