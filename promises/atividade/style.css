@@ -1,0 +1,14 @@
+body {
+    background-color: azure;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
